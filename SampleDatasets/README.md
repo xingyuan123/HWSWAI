@@ -16,3 +16,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 This dataset is an updated version of the UCI Human Activity Recognition Using smartphones Dataset that can be found at: https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 This version provides the original raw inertial signals from the smartphone sensors, instead of the ones pre-processed into windows which were provided in version 1. This change was done in order to be able to make online tests with the raw data. Moreover, the activity labels were updated in order to include postural transitions that were not part of the previous version of the dataset. 
+
+## [CG4002 Sample Dataset](https://github.com/k-walter/CG4002)
+CG4002 Sample Dataset taken from data collected from previous semester's team data.
+Each subfolder(data0-4) corresponds to a different user and within each subfolder, each action is stored as a csv file with varying number of rows reflecting the different time taken needed for each action. Each of the 6 columns in the file correspond to x, y, z acceleration and x, y, z gyroscope measured respectively. Currently, Onset detection is not required as data represents the action fully.
