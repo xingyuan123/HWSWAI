@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Feb 14 00:41:29 2024
+# Process ID: 21512
+# Current directory: C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/impl/verilog/project.runs/synth_1
+# Command line: vivado.exe -log bd_0_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
+# Log file: C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/impl/verilog/project.runs/synth_1/bd_0_wrapper.vds
+# Journal file: C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/impl/verilog/project.runs/synth_1\vivado.jou
+# Running On: DESKTOP-7J5H59V, OS: Windows, CPU Frequency: 1800 MHz, CPU Physical cores: 4, Host memory: 8470 MB
+#-----------------------------------------------------------
+source bd_0_wrapper.tcl -notrace

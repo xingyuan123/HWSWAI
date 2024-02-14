@@ -1,0 +1,841 @@
+
+C:\Users\xingy\AppData\Roaming\Xilinx\Vitis\testHLS2\solution1\sim\verilog>set PATH= 
+
+C:\Users\xingy\AppData\Roaming\Xilinx\Vitis\testHLS2\solution1\sim\verilog>call C:/Xilinx/Vivado/2022.1/bin/xelab xil_defaultlib.apatb_MLP_top glbl -Oenable_linking_all_libraries  -prj MLP.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib "ieee_proposed=./ieee_proposed" -s MLP  
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_MLP_top glbl -Oenable_linking_all_libraries -prj MLP.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s MLP 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/ip/xil_defaultlib/MLP_ddiv_64ns_64ns_64_22_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_ddiv_64ns_64ns_64_22_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/ip/xil_defaultlib/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/ip/xil_defaultlib/MLP_fcmp_32ns_32ns_1_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_fcmp_32ns_32ns_1_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/ip/xil_defaultlib/MLP_fmul_32ns_32ns_32_3_max_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_fmul_32ns_32ns_32_3_max_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/ip/xil_defaultlib/MLP_fptrunc_64ns_32_2_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_fptrunc_64ns_32_2_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/ip/xil_defaultlib/MLP_sitodp_32ns_64_4_no_dsp_1_ip.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_sitodp_32ns_64_4_no_dsp_1_ip
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_axi_s_in_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_in_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_axi_s_out_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_out_data
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+WARNING: [VRFC 10-3824] variable 'block_delay' must explicitly be declared as automatic or static [C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:31]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_MLP_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_ddiv_64ns_64ns_64_22_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_ddiv_64ns_64ns_64_22_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_fadd_32ns_32ns_32_4_full_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_fadd_32ns_32ns_32_4_full_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_fcmp_32ns_32ns_1_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_fcmp_32ns_32ns_1_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_fmul_32ns_32ns_32_3_max_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_fmul_32ns_32ns_32_3_max_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_fptrunc_64ns_32_2_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_fptrunc_64ns_32_2_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_hidden_layer_1_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_hidden_layer_1_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_hidden_layer_2_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_hidden_layer_2_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_input_features_casted_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_input_features_casted_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_input_features_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_input_features_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_bias_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_bias_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_0_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_0_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_10_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_10_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_11_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_11_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_1_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_1_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_2_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_2_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_3_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_3_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_4_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_4_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_5_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_5_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_6_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_6_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_7_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_7_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_8_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_8_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_9_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_111_7_output_weights_9_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_123_9.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_123_9
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_128_10.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_128_10
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_58_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_58_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_69_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_69_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_hidden_bias_1_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_hidden_bias_1_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_0_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_0_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_10_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_10_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_11_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_11_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_12_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_12_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_13_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_13_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_14_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_14_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_15_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_15_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_16_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_16_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_17_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_17_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_18_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_18_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_19_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_19_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_1_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_1_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_20_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_20_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_21_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_21_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_22_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_22_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_23_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_23_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_24_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_24_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_25_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_25_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_26_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_26_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_27_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_27_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_28_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_28_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_29_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_29_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_2_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_2_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_30_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_30_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_31_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_31_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_32_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_32_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_33_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_33_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_34_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_34_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_35_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_35_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_36_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_36_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_37_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_37_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_38_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_38_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_39_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_39_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_3_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_3_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_40_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_40_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_41_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_41_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_42_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_42_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_43_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_43_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_44_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_44_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_45_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_45_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_46_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_46_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_47_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_47_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_4_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_4_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_5_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_5_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_6_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_6_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_7_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_7_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_8_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_8_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_9_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_77_3_weights_1_9_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_hidden_bias_2_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_hidden_bias_2_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_0_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_0_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_10_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_10_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_11_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_11_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_12_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_12_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_13_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_13_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_14_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_14_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_15_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_15_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_16_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_16_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_17_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_17_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_18_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_18_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_19_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_19_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_1_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_1_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_20_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_20_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_21_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_21_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_22_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_22_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_23_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_23_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_2_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_2_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_3_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_3_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_4_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_4_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_5_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_5_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_6_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_6_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_7_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_7_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_8_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_8_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_9_ROM_AUTO_1R.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_MLP_Pipeline_VITIS_LOOP_94_5_weights_2_9_ROM_AUTO_1R
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_output_layer_RAM_AUTO_1R1W.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_output_layer_RAM_AUTO_1R1W
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_regslice_both
+INFO: [VRFC 10-311] analyzing module MLP_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP_sitodp_32ns_64_4_no_dsp_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MLP_sitodp_32ns_64_4_no_dsp_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:21]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:45]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:53]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package floating_point_v7_1_14.floating_point_v7_1_14_viv_comp
+Compiling package ieee.numeric_std
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package floating_point_v7_1_14.floating_point_v7_1_14_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_14.floating_point_v7_1_14_exp_table...
+Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_14.floating_point_v7_1_14_pkg
+Compiling package floating_point_v7_1_14.flt_utils
+Compiling package unisim.vcomponents
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package floating_point_v7_1_14.vt2mutils
+Compiling package floating_point_v7_1_14.vt2mcomps
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.MLP_input_features_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.MLP_input_features_casted_RAM_AU...
+Compiling module xil_defaultlib.MLP_hidden_layer_1_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.MLP_hidden_layer_2_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.MLP_output_layer_RAM_AUTO_1R1W
+Compiling module xil_defaultlib.MLP_flow_control_loop_pipe_seque...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_1
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_2
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_3
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_4
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_5
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_6
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_58_1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=5,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=24,length=0)\]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=12,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=14,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=25,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=3,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_14.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=8,length=0)\]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="ki...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture rtl of entity floating_point_v7_1_14.special_detect [\special_detect(a_w=64,a_fw=53,o...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_to_flt_conv_exp [\flt_to_flt_conv_exp(a_w=64,a_ew...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_to_flt_conv [\flt_to_flt_conv(c_xdevicefamily...]
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.MLP_fptrunc_64ns_32_2_no_dsp_1_i...
+Compiling module xil_defaultlib.MLP_fptrunc_64ns_32_2_no_dsp_1(d...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=52,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=54,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=55,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=52)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=53,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=54,fast_input=true)...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_div_mant_addsub [\flt_div_mant_addsub(c_xdevicefa...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=55)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [delay_default]
+Compiling architecture virtex of entity floating_point_v7_1_14.flt_div_mant [\flt_div_mant(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=13,length=0,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_14.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(length=19,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=11,length=19)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(length=18,fast_input=true...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=3,length=18,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=4,length=18,fast_in...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_div_exp [\flt_div_exp(c_xdevicefamily="no...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=11,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=26,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=27,length=0,fast_in...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=28,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=29,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_round_bit [\flt_round_bit(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_14.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture virtex of entity floating_point_v7_1_14.flt_div [\flt_div(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=64,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.MLP_ddiv_64ns_64ns_64_22_no_dsp_...
+Compiling module xil_defaultlib.MLP_ddiv_64ns_64ns_64_22_no_dsp_...
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=2)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.mux4 [\mux4(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.lead_zero_encode [\lead_zero_encode(c_xdevicefamil...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=32)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.shift_msb_first [\shift_msb_first(a_width=32,dist...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=26,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=27,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=54,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.renorm_and_round_logic [\renorm_and_round_logic(c_xdevic...]
+Compiling architecture synth of entity floating_point_v7_1_14.fix_to_flt_conv_exp [\fix_to_flt_conv_exp(c_xdevicefa...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_14.fix_to_flt_conv [\fix_to_flt_conv(c_xdevicefamily...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.MLP_sitodp_32ns_64_4_no_dsp_1_ip
+Compiling module xil_defaultlib.MLP_sitodp_32ns_64_4_no_dsp_1(NU...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_69_2
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=24,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=16,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=48,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(c_part="xczu3eg...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=13,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_14.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=27)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=4)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=3)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=25,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_14.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=10,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_14.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare [\compare(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_add [\flt_add(c_xdevicefamily="zynqup...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.MLP_fadd_32ns_32ns_32_4_full_dsp...
+Compiling module xil_defaultlib.MLP_fadd_32ns_32ns_32_4_full_dsp...
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=17,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_14.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.fix_mult [\fix_mult(c_xdevicefamily="zynqu...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_14.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_14.delay [\delay(width=18,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_14.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_14.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_14.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_14.flt_mult [\flt_mult(c_xdevicefamily="zynqu...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.MLP_fmul_32ns_32ns_32_3_max_dsp_...
+Compiling module xil_defaultlib.MLP_fmul_32ns_32ns_32_3_max_dsp_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_77_3
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_94_5
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_111_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_123_...
+Compiling module xil_defaultlib.MLP_MLP_Pipeline_VITIS_LOOP_128_...
+Compiling module xil_defaultlib.MLP_control_s_axi
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_ne_im [\compare_ne_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_eq [\compare_eq(c_xdevicefamily="zyn...]
+Compiling architecture struct of entity floating_point_v7_1_14.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_14.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_14.fp_cmp [\fp_cmp(c_xdevicefamily="zynqupl...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14_viv [\floating_point_v7_1_14_viv(c_xd...]
+Compiling architecture xilinx of entity floating_point_v7_1_14.floating_point_v7_1_14 [\floating_point_v7_1_14(c_xdevic...]
+Compiling module xil_defaultlib.MLP_fcmp_32ns_32ns_1_2_no_dsp_1_...
+Compiling module xil_defaultlib.MLP_fcmp_32ns_32ns_1_2_no_dsp_1
+Compiling module xil_defaultlib.MLP_regslice_both
+Compiling module xil_defaultlib.MLP_regslice_both(DataWidth=4)
+Compiling module xil_defaultlib.MLP_regslice_both(DataWidth=2)
+Compiling module xil_defaultlib.MLP_regslice_both(DataWidth=1)
+Compiling module xil_defaultlib.MLP_regslice_both(DataWidth=5)
+Compiling module xil_defaultlib.MLP_regslice_both(DataWidth=6)
+Compiling module xil_defaultlib.MLP
+Compiling module xil_defaultlib.fifo(DEPTH=48,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=48,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=48,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=48,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=48,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=48,WIDTH=6)
+Compiling module xil_defaultlib.AESL_axi_s_in_data
+Compiling module xil_defaultlib.fifo(DEPTH=5,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=5,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=5,WIDTH=2)
+Compiling module xil_defaultlib.fifo(DEPTH=5,WIDTH=1)
+Compiling module xil_defaultlib.fifo(DEPTH=5,WIDTH=5)
+Compiling module xil_defaultlib.fifo(DEPTH=5,WIDTH=6)
+Compiling module xil_defaultlib.AESL_axi_s_out_data
+Compiling module xil_defaultlib.AESL_axi_slave_control
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:45]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:53]
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_MLP_top
+Compiling module work.glbl
+Built simulation snapshot MLP
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/MLP/xsim_script.tcl
+# xsim {MLP} -autoloadwcfg -tclbatch {MLP.tcl}
+Time resolution is 1 ps
+source MLP.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U395/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U396/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U397/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U398/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U399/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U400/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U401/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U402/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U403/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U404/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U405/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U406/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U407/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U408/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U409/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U410/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U411/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U412/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U413/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U414/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U415/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U416/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U417/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U393/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 4495 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U394/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U397/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U399/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U402/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U406/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U407/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U408/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U409/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U410/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U411/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U413/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U415/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U416/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U417/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U393/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U394/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U395/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U396/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U398/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U400/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U401/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U403/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U404/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U405/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U412/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5805 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U414/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U395/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U396/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U400/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U404/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 11  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U405/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U393/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U394/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U397/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U398/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U399/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U401/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U402/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6485 ns  Iteration: 12  Process: /apatb_MLP_top/AESL_inst_MLP/fadd_32ns_32ns_32_4_full_dsp_1_U403/MLP_fadd_32ns_32ns_32_4_full_dsp_1_ip_u/inst/i_synth/addsub_op/ADDSUB/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/i_no_versal_es1_workaround/DSP/prcs_opmode_drc  File: C:/Xilinx/Vivado/2022.1/data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [n/a] @ "6725000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 6785 ns : File "C:/Users/xingy/AppData/Roaming/Xilinx/Vitis/testHLS2/solution1/sim/verilog/MLP.autotb.v" Line 446
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1182.875 ; gain = 494.547
+## quit
+INFO: [Common 17-206] Exiting xsim at Tue Feb 13 20:06:51 2024...
