@@ -1,7 +1,0 @@
-   Build using "C:/Xilinx/Vitis_HLS/2022.1/tps/win64/msys64/mingw64/bin/g++"
-   Compiling SampleDatasetMLPTest.cpp_pre.cpp.tb.cpp
-   Compiling apatb_MLP.cpp
-   Compiling SampleDatasetMLP.cpp_pre.cpp.tb.cpp
-   Compiling apatb_MLP_util.cpp
-   Compiling apatb_MLP_ir.ll
-   Generating cosim.tv.exe
