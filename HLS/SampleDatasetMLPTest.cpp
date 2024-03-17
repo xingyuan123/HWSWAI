@@ -45,7 +45,7 @@ int main()
 
     for(int j=0;j<54;j++) {
     	tmp_infer.data = inference_int[j];
-  	  if(j==53) { // **
+  	  if(j==53) {
   		tmp_infer.last = 1;
   	  }
   	  else {

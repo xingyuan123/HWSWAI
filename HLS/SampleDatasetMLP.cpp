@@ -159,6 +159,7 @@ void MLP(hls::stream< ap_axis<32,2,5,6> > &in_data,
 		}
 
 		for (int i = 0; i < OUTPUT_NODES; i++){
+			cout << output_layer[i] << endl;
 			output_layer_casted[i] = int(output_layer[i] * 10000000);
 		}
 
